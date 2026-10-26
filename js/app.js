@@ -41,7 +41,7 @@ async function obtenerProductos() {
 
     productos = await respuesta.json();
     mensaje.textContent = "";
-
+    console.log(productos);
     crearCategorias();
     mostrarDestacados();
     mostrarProductos();
@@ -175,6 +175,7 @@ function mostrarCarrito() {
  const items = Object.values(carrito);
  let total = 0;
  let unidades = 0;
+ 
 
  lista.replaceChildren();
  if (!items.length) lista.textContent = "Tu carrito está vacío.";
@@ -210,7 +211,6 @@ function mostrarCarrito() {
  });
 
  document.getElementById("total").textContent = dinero(total);
- document.getElementById("total-descuento").textContent = dinero(total/0.1*100);
  document.getElementById("contador").textContent = unidades;
 }
 
