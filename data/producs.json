@@ -1,0 +1,98 @@
+[{
+  "id": 1,
+  "title": "Teclado mecánico",
+  "category": "Accsesorios",
+  "price": 120.000,
+  "stock": 8,
+  "description": "Teclado mecanico perfecto para juego o uso diario",
+  "active": true
+},
+{
+  "id": 2,
+  "name": "Mouse de oficina",
+  "category": "Accsesorios",
+  "price": 50.000,
+  "stock": 8,
+  "description": "Mouse de oficina para empresas",
+  "active": true
+},{
+  "id": 3,
+  "name": "Mouse Gamer",
+  "category": "Accsesorios",
+  "price": 80.000,
+  "stock": 9,
+  "description": "Mouse Gamer velocidad en cada click",
+  "active": true
+},{
+  "id": 4,
+  "name": "Audifonos Bluetooh",
+  "category": "Sonido",
+  "price": 200.000,
+  "stock": 10,
+  "description": "Audifonos inalambricos",
+  "active": true
+},{
+  "id": 5,
+  "name": "Audifonos de cable",
+  "category": "Sonido",
+  "price": 120000,
+  "stock": 8,
+  "description": "Audifonos de cable para celular o pc",
+  "active": true
+},{
+  "id": 6,
+  "name": "Parlante Bluetooth",
+  "category": "Sonido",
+  "price": 190.000,
+  "stock": 7,
+  "description": "Parlante inalambrico para pc ",
+  "active": true
+},{
+  "id": 7,
+  "name": "Silla Gamer",
+  "category": "Accsesorios",
+  "price": 350.000,
+  "stock": 10,
+  "description": "Silla gamer comodidas para tu estudio o juego",
+  "active": true
+},{
+  "id": 8,
+  "name": "Portatil Multitarea",
+  "category": "PC",
+  "price": 600.000,
+  "stock": 8,
+  "description": "Portatil multitarea para oficina",
+  "active": true
+},{
+  "id": 9,
+  "name": "Portatil Gamer",
+  "category": "PC",
+  "price": 900.000,
+  "stock": 8,
+  "description": "Portatil para juegos alto rendimiento",
+  "active": true
+},{
+  "id": 10,
+  "name": "PC de Torre Gamer",
+  "category": "PC",
+  "price": 990.000,
+  "stock": 5,
+  "description": "Pc de torre gamer para alto rendimiento y calidad",
+  "active": true
+},{
+  "id": 11,
+  "name": "Pantalla OLED",
+  "category": "Pantalla",
+  "price": 800.000,
+  "stock": 8,
+  "description": "Pantalla OLED observa tus juegos con la mejor calidad y nitidez",
+  "active": true
+},{
+  "id": 12,
+  "name": "Pantalla LED",
+  "category": "Pantalla",
+  "price": 600.000,
+  "stock": 0,
+  "description": "Pantalla LED perfecta para tu usodiario en oficina",
+  "active": true
+}]
