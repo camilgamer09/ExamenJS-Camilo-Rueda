@@ -1,5 +1,4 @@
 
-const API = "data/producs.Json";
 
 let productos = [];
 let categoria = "todas";
@@ -37,7 +36,7 @@ async function obtenerProductos() {
   mensaje.textContent = "Cargando productos...";
 
   try{
-    const respuesta = await fetch(API);
+    const respuesta = await fetch("data/producs.json");
     if (!respuesta.ok) throw new Error("Error" + respuesta.status);
 
     productos = await respuesta.json();
@@ -211,6 +210,7 @@ function mostrarCarrito() {
  });
 
  document.getElementById("total").textContent = dinero(total);
+ document.getElementById("total-descuento").textContent = dinero(total/0.1*100);
  document.getElementById("contador").textContent = unidades;
 }
 
