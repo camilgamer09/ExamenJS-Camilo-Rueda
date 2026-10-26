@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor barra">
+            <strong class="logo">FakeStore</strong>
+
+            <input id="busqueda" type="search" placeholder="Buscar producots..." aria-label="Buscar productos">
+
+            <div>
+                <button id="btn-tema" class="icono" aria-label="cambiar tema">
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </button>
+                <button id="btn-carrito" class="icono" aria-label="Abrir carrito">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <span id="contador">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="franja">
+        <div id="categorias" class="contenedor"></div>
+    </nav>
+
+    <section class="welcome">
+        <h1>Bienvenido a FakeStore</h1>
+        <p>Descubre los mejores productos de moda, joyeria y tecnologia</p>
+    </section>
+
+    <main class="contenedor">
+
+        <h2>Productos destacados</h2>
+        <p class="gris">Nuestros productos mejor valorados</p>
+
+        <div class="marco">
+            <button id="prev" class="flecha izq" aria-label="Anterior">←</button>
+            <div id="destacados" class="carrusel"></div>
+            <button id="next" class="flecha der" aria-label="Siguiente">→</button>
+        </div>
+
+        <h2>Catalogo completo</h2>
+
+        <div class="controles">
+            <label for="orden">Ordenar por: </label>
+            <select id="orden">
+                <option value="">Relevancia</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="nombre">Nombre: A-Z</option>
+                <option value="calificacion">Calificaion</option>
+            </select>
+            <button id="btn-limpiar">Limpiar Filtros</button>
+        </div>
+
+        <p id="resultados" class="gris"></p>
+        <p id="mensaje"></p>
+        <div id="productos" class="grid"></div>
+
+    </main>
+
+    <aside id="carrito" hidden>
+        <h2>Tu carrito <span class="material-symbols-outlined">shopping_cart</span></h2>
+        <div id="lista-carrito"></div>
+
+        <div class="pie-carrito">
+            <p>Total: <strong id="total">$0.00 USD</strong></p>
+            <button id="btn-vaciar">Vaciar carrito</button>
+            <button id="btn-cerrar">Cerrar carrito</button>
+            <button>Pagar</button>
+        </div>    
+    </aside>
+
+    <template id="template-tarjeta">
+        <article class="tarjeta">
+            <figure class="foto">
+                <img class="card-img" src="" alt="">
+                <span class="etiqueta" style="display: none;">Destacado</span>
+            </figure>
+            <section class="info">
+                <div class="estrellas"><span class="estrellas-texto">★★★★★</span><span class="rate-num"></span></div>
+                <h3 class="card-titulo"></h3>
+                <p class="desc card-desc"></p>
+                <footer class="pie-tarjeta">
+                  <span class="precio card-precio"></span>
+                  <span class=" cat card-cat"></span>
+                </footer>
+                <button class="btn-agregar">Agregalo a tu carrito</button>
+            </section>
+        </article>
+    </template>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
